@@ -5,7 +5,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, [skip CI])" # skip if commit message contains contains[skip ci]
     runs-on: ubuntu-latest
     steps:
-        - name: checkout code
-          uses: actions/checkout@v3
-        - name: run build
-          run: echo "Running the build..."
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: run build
+        run: echo "Running the build..."
